@@ -20,28 +20,4 @@ const App = () => {
   );
 };
 
-// class App extends Component<AppProps, AppState> {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       people: people
-//     };
-//   }
-//   clearAll = () => {
-//     this.setState(() => ({
-//       people: []
-//     }));
-//     console.log(people);
-//   };
-
-//   render() {
-//     return (
-//       <div className="App">
-//         <BirthdayReminder people={peopleData} />
-//         <button onClick={this.clearAll}>Clear All</button>
-//       </div>
-//     );
-//   }
-// }
-
 render(<App />, document.getElementById('root'));
