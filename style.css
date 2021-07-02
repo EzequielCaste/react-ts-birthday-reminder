@@ -3,32 +3,33 @@
   margin: 0;
   box-sizing: border-box;
 }
-/*
---copper-10: #fcfaf9;
-    --copper-20: #fcf0ed;
-    --copper-30: #fadfd8;
-    --copper-40: #f2c5b8;
-    --camo-10: #fafbf3;
-    --camo-20: #f1f4e4;
-    --camo-30: #e4e8cc;
-    --camo-40: #cdd3ac;
-    --camo-50: #aeb48a;
-*/
+a,
+a:visited {
+  color: #1c4b77;
+}
+a:hover {
+  color: darkorange;
+}
 body {
   font-family: Lato;
-  min-height: 100vh;
   background-color: #f1f4e4;
-  display: grid;
-  place-items: center;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
 }
 .birthday-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 350px;
+  max-width: 350px;
   min-height: 45vh;
   border-radius: 8px;
-  padding: 2em;
+  padding: 1em 2em;
+  margin: 1em auto 0 auto;
   background-color: #1c4b77;
 }
 .birthday-info {
@@ -46,11 +47,11 @@ li {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: 8px;
+  margin: 8px 0;
   border-radius: 4px;
   border: 1px solid black;
   list-style: none;
-  padding: 8px;
+  padding: 4px;
   background-color: beige;
   transition: all ease 300ms;
 }
@@ -80,4 +81,18 @@ button {
 }
 button:hover {
   transform: scale(105%);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+footer a {
+  margin: 0 4px;
+}
+@media all and (min-width: 750px) {
+  .birthday-container {
+    margin: 3em auto 0 auto;
+  }
 }
