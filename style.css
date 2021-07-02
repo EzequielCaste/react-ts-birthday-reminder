@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*
+--copper-10: #fcfaf9;
+    --copper-20: #fcf0ed;
+    --copper-30: #fadfd8;
+    --copper-40: #f2c5b8;
+    --camo-10: #fafbf3;
+    --camo-20: #f1f4e4;
+    --camo-30: #e4e8cc;
+    --camo-40: #cdd3ac;
+    --camo-50: #aeb48a;
+*/
+body {
+  font-family: Lato;
+  min-height: 100vh;
+  background-color: #f1f4e4;
+  display: grid;
+  place-items: center;
+}
+.birthday-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  min-height: 45vh;
+  border-radius: 8px;
+  padding: 2em;
+  background-color: #1c4b77;
+}
+.birthday-info {
+  display: flex;
+  flex-direction: column;
+}
+.birthday-info span {
+  font-size: 0.8em;
+}
+h1,
+p {
+  color: white;
+}
+li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  list-style: none;
+  padding: 8px;
+  background-color: beige;
+  transition: all ease 300ms;
+}
+li:hover {
+  transform: scale(105%);
+}
+img {
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+  margin-right: 1em;
+}
+button {
+  font-family: monospace;
+  width: 100%;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 0.8em;
+  background-color: darkorange;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all ease 300ms;
+}
+button:hover {
+  transform: scale(105%);
+}
